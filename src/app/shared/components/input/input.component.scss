@@ -1,0 +1,30 @@
+@import "colors";
+
+:host {
+  font-family: "Netflix Sans", sans-serif;
+}
+
+.input {
+  &__field {
+    height: 56px;
+    min-height: 56px;
+    width: auto;
+    font-size: 1rem;
+    background-color: $primary-black;
+    border: 1px solid $grey-200;
+    color: #bdbcbb;
+  }
+
+  &__label {
+    color: #bdbcbb !important;
+  }
+
+  .form-floating > input + label:after {
+    background-color: unset;
+    font-size: 0.75rem;
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 0 0.15rem rgba(188, 188, 188, 1);
+  }
+}

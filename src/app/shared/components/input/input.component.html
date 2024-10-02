@@ -1,0 +1,15 @@
+<div class="input">
+  <!-- TODO: implement validators -->
+  <form class="form-floating">
+    <input
+      class="form-control input__field"
+      [type]="type"
+      [id]="id"
+      [name]="name"
+      [placeholder]="placeholder"
+      [(ngModel)]="value"
+      (ngModelChange)="onValueChange($event)"
+    />
+    <label class="input__label" [for]="id">{{ label }}</label>
+  </form>
+</div>

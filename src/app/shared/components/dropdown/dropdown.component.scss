@@ -1,19 +1,13 @@
 @import "colors";
 
 :host {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #181818;
+  font-family: "Netflix Sans", sans-serif;
 }
 
 .dropdown {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-family: "Netflix Sans", sans-serif;
 
   &__label {
     font-size: 0.875rem;
