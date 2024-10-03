@@ -1,0 +1,13 @@
+<ng-container *ngIf="type === 'icon'; else labelCard">
+  <div class="icon">
+    <app-icon name="top-10" width="32px" height="32px"></app-icon>
+    <ng-container *ngIf="title">
+      <h3>{{ title }}</h3>
+    </ng-container>
+  </div>
+</ng-container>
+<ng-template #labelCard>
+  <div class="label">
+    <span>{{ label }}</span>
+  </div>
+</ng-template>
