@@ -8,6 +8,7 @@ import { DropdownComponent } from './shared/components/dropdown/dropdown.compone
 import { IconComponent } from './shared/components/icon/icon.component';
 import { InputComponent } from './shared/components/input/input.component';
 import { MaturityRatingComponent } from './shared/components/maturity-rating/maturity-rating.component';
+import { VideoQualityComponent } from './shared/components/video-quality/video-quality.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -17,6 +18,7 @@ import { MaturityRatingComponent } from './shared/components/maturity-rating/mat
     InputComponent,
     IconComponent,
     MaturityRatingComponent,
+    VideoQualityComponent,
     FormsModule,
     ReactiveFormsModule,
   ],
