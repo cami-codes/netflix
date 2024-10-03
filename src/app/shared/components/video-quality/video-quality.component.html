@@ -1,0 +1,13 @@
+<div class="video-quality">
+  <ng-container *ngIf="quality === 'dolby'; else normalCard">
+    <img
+      src="assets/icons/dolby.svg"
+      [style.width]="'75px'"
+      [style.height]="'12px'"
+      alt="Dolby Vision icon"
+    />
+  </ng-container>
+  <ng-template #normalCard>
+    <span>{{ quality }}</span>
+  </ng-template>
+</div>
