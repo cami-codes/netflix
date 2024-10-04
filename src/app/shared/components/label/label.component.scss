@@ -1,0 +1,18 @@
+@import "colors";
+
+:host {
+  font-family: "Netflix Sans", sans-serif;
+  color: #fff;
+}
+
+.icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.label {
+  background: $secondary-red-300;
+  padding: 6px 1rem;
+  border-radius: 4px 4px 0 0;
+  font-weight: 500;
+}
