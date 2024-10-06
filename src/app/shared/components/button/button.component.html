@@ -1,0 +1,21 @@
+<ng-container *ngIf="!checkbox">
+  <button
+    class="button"
+    [ngClass]="{
+      'button__red': color === 'red',
+      'button__gray': color === 'gray',
+      'button__black': color === 'black',
+      'button__white': color === 'white',
+      'button__info': color === 'info',
+    }"
+  >
+    <app-icon
+      [color]="iconColor"
+      *ngIf="icon"
+      [name]="icon"
+      width="24px"
+      height="24px"
+    ></app-icon>
+    {{ text }}
+  </button>
+</ng-container>

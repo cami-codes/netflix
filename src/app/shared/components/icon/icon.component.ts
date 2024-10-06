@@ -12,6 +12,7 @@ export class IconComponent implements OnInit {
   @Input() name: string = '';
   @Input() width: string = '24px';
   @Input() height: string = '24px';
+  @Input() color!: string;
 
   public iconPath: string = '';
 

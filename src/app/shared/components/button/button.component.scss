@@ -1,0 +1,88 @@
+@import "colors";
+
+:host {
+  font-family: "Netflix Sans", sans-serif;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 300px;
+  height: 40px;
+  color: $primary-white;
+
+  &__red {
+    border: none;
+    background: $primary-red;
+    border-radius: 4px;
+
+    &:hover {
+      background: $secondary-red-200;
+    }
+
+    &:active {
+      color: $transparent-white-70;
+      background: #99161d;
+    }
+  }
+
+  &__gray {
+    border: none;
+    border-radius: 4px;
+    background: $transparent-white-20;
+
+    &:hover {
+      background: $transparent-white-15;
+    }
+
+    &:active {
+      color: $transparent-white-70;
+      background: rgba(128, 128, 128, 0.3);
+    }
+  }
+
+  &__black {
+    color: $grey-200;
+    border: 1px solid $grey-200;
+    background: $grey-850;
+
+    &:hover {
+      border: 1px solid $primary-white;
+      color: $primary-white;
+    }
+  }
+
+  &__white {
+    color: $primary-black;
+    background: $primary-white;
+    border-radius: 4px;
+    font-weight: 500;
+    border: none;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.75);
+    }
+
+    &:active {
+      background: rgba(255, 255, 255, 0.5);
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__info {
+    border: none;
+    border-radius: 4px;
+    background: $grey-300t70;
+
+    &:hover {
+      background: $grey-300t40;
+    }
+
+    &:active {
+      color: $transparent-white-70;
+      background: rgba(128, 128, 128, 0.3);
+    }
+  }
+}

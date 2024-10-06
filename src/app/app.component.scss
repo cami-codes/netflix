@@ -8,3 +8,26 @@
   gap: 1rem;
   flex-direction: column;
 }
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-play {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  ::ng-deep {
+    .button__white {
+      height: 42px;
+      width: 120px;
+    }
+
+    .button__info {
+      width: 160px;
+      height: 42px;
+    }
+  }
+}

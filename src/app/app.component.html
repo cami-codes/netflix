@@ -20,7 +20,31 @@
   [(value)]="password"
 ></app-input>
 
-<app-icon name="info" width="24px" height="24px"></app-icon>
+<div class="icons">
+  <app-icon name="account" width="24px" height="24px"></app-icon>
+  <app-icon name="arrow-down" width="24px" height="24px"></app-icon>
+  <app-icon name="arrow-left" width="24px" height="24px"></app-icon>
+  <app-icon name="arrow-right" width="24px" height="24px"></app-icon>
+  <app-icon name="arrow-up" width="24px" height="24px"></app-icon>
+  <app-icon name="circle-error" width="24px" height="24px"></app-icon>
+  <app-icon name="faq-questions" width="24px" height="24px"></app-icon>
+  <app-icon name="flag" width="24px" height="24px"></app-icon>
+  <app-icon name="info" width="24px" height="24px"></app-icon>
+  <app-icon name="notification" width="24px" height="24px"></app-icon>
+  <app-icon name="pencil" width="24px" height="24px"></app-icon>
+  <app-icon name="person" width="24px" height="24px"></app-icon>
+  <app-icon name="play" width="24px" height="24px"></app-icon>
+  <app-icon name="plus-thin" width="24px" height="24px"></app-icon>
+  <app-icon name="plus-wide" width="24px" height="24px"></app-icon>
+  <app-icon name="question" width="24px" height="24px"></app-icon>
+  <app-icon name="search" width="24px" height="24px"></app-icon>
+  <app-icon name="thumb-down" width="24px" height="24px"></app-icon>
+  <app-icon name="thumb-up" width="24px" height="24px"></app-icon>
+  <app-icon name="facebook" width="24px" height="24px"></app-icon>
+  <app-icon name="instagram" width="24px" height="24px"></app-icon>
+  <app-icon name="twitter" width="24px" height="24px"></app-icon>
+  <app-icon name="youtube" width="24px" height="24px"></app-icon>
+</div>
 
 <app-maturity-rating [rating]="'TV-Y'"></app-maturity-rating>
 
@@ -29,3 +53,33 @@
 
 <app-label [type]="'icon'" [title]="'#2 in TV Shows Today'"></app-label>
 <app-label [type]="'label'" [label]="'Recently Added'"></app-label>
+
+<app-button [checkbox]="false" [color]="'red'" [text]="'Sign In'"></app-button>
+
+<app-button
+  [checkbox]="false"
+  [color]="'gray'"
+  [text]="'Use a Sign-In Code'"
+></app-button>
+
+<app-button
+  [checkbox]="false"
+  [color]="'black'"
+  [text]="'Manage Profiles'"
+></app-button>
+
+<div class="icon-play">
+  <app-button
+    [icon]="'play'"
+    [iconColor]="'black'"
+    [checkbox]="false"
+    [color]="'white'"
+    [text]="'Play'"
+  ></app-button>
+  <app-button
+    [icon]="'info'"
+    [checkbox]="false"
+    [color]="'info'"
+    [text]="'More Info'"
+  ></app-button>
+</div>
