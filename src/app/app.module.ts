@@ -10,6 +10,7 @@ import { InputComponent } from './shared/components/input/input.component';
 import { MaturityRatingComponent } from './shared/components/maturity-rating/maturity-rating.component';
 import { VideoQualityComponent } from './shared/components/video-quality/video-quality.component';
 import { LabelComponent } from './shared/components/label/label.component';
+import { ButtonComponent } from './shared/components/button/button.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -21,6 +22,7 @@ import { LabelComponent } from './shared/components/label/label.component';
     MaturityRatingComponent,
     VideoQualityComponent,
     LabelComponent,
+    ButtonComponent,
     FormsModule,
     ReactiveFormsModule,
   ],
