@@ -11,6 +11,7 @@ import { MaturityRatingComponent } from './shared/components/maturity-rating/mat
 import { VideoQualityComponent } from './shared/components/video-quality/video-quality.component';
 import { LabelComponent } from './shared/components/label/label.component';
 import { ButtonComponent } from './shared/components/button/button.component';
+import { CheckboxComponent } from './shared/components/checkbox/checkbox.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -23,6 +24,7 @@ import { ButtonComponent } from './shared/components/button/button.component';
     VideoQualityComponent,
     LabelComponent,
     ButtonComponent,
+    CheckboxComponent,
     FormsModule,
     ReactiveFormsModule,
   ],
