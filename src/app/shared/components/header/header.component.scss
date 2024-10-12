@@ -1,0 +1,29 @@
+::ng-deep {
+  .dropdown__select {
+    border-radius: 4px !important;
+    border: 1px solid #545454 !important;
+  }
+
+  .button__red {
+    width: 77px !important;
+    height: 32px !important;
+    font-size: 14px;
+  }
+}
+
+.header {
+  width: 100vw;
+
+  &__landing {
+    display: flex;
+    align-items: center;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    width: 100%;
+  }
+}

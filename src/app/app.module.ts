@@ -12,6 +12,7 @@ import { VideoQualityComponent } from './shared/components/video-quality/video-q
 import { LabelComponent } from './shared/components/label/label.component';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { CheckboxComponent } from './shared/components/checkbox/checkbox.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -25,6 +26,7 @@ import { CheckboxComponent } from './shared/components/checkbox/checkbox.compone
     LabelComponent,
     ButtonComponent,
     CheckboxComponent,
+    HeaderComponent,
     FormsModule,
     ReactiveFormsModule,
   ],

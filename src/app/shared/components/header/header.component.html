@@ -1,0 +1,16 @@
+<div class="header">
+  <ng-container *ngIf="type === 'landing'">
+    <header class="header__landing">
+      <img src="assets/logos/medium-word.svg" alt="" />
+
+      <div class="header__actions">
+        <app-dropdown
+          [icon]="'translate'"
+          [options]="options"
+          [selectedOption]="selectedOption"
+        ></app-dropdown>
+        <app-button [color]="'red'" [text]="'Sign in'"></app-button>
+      </div>
+    </header>
+  </ng-container>
+</div>

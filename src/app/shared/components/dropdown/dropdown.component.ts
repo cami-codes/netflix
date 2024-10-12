@@ -1,19 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'app-dropdown',
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.scss'],
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FormsModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule, IconComponent],
 })
 export class DropdownComponent implements OnInit {
   @Input() public options: string[] = [];
-  @Input() public label?: string = 'Select Your Preference';
+  @Input() public label?: string = '';
   @Input() public selectedOption: string = '';
   @Input() public placeholder: string = '';
+  @Input() public icon: string = '';
   @Output() public selectionChange = new EventEmitter<string>();
 
   public selectElement: HTMLElement | null = null;
