@@ -1,5 +1,5 @@
 <div class="header">
-  <ng-container *ngIf="type === 'landing'">
+  <ng-container *ngIf="type === 'landing'; else homePage">
     <header class="header__landing">
       <img src="assets/logos/medium-word.svg" alt="" />
 
@@ -13,4 +13,35 @@
       </div>
     </header>
   </ng-container>
+  <ng-template #homePage>
+    <header class="header__home">
+      <img src="assets/logos/small-word.svg" alt="" />
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a class="active">Home</a>
+          </li>
+          <li>
+            <a>TV Shows</a>
+          </li>
+          <li>
+            <a>Movies</a>
+          </li>
+          <li>
+            <a>New & Popular</a>
+          </li>
+          <li>
+            <a>My List</a>
+          </li>
+          <li>
+            <a>Browse by Languages</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <app-icon name="search" width="17px" height="17px"></app-icon>
+        <app-icon name="notification" width="17px" height="20px"></app-icon>
+      </div>
+    </header>
+  </ng-template>
 </div>

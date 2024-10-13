@@ -1,3 +1,7 @@
+:host {
+  font-family: "Netflix Sans", sans-serif;
+}
+
 ::ng-deep {
   .dropdown__select {
     border-radius: 4px !important;
@@ -25,5 +29,52 @@
     justify-content: flex-end;
     gap: 1.5rem;
     width: 100%;
+    cursor: pointer;
+  }
+
+  &__home {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.4s;
+    width: 100%;
+    gap: 45px;
+    height: 68px;
+    padding: 0 4%;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: calc(100% + 80rem);
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  li {
+    width: auto;
+    cursor: pointer;
+  }
+
+  a {
+    color: #e5e5e5;
+    text-decoration: none;
+    transition: color 0.4s;
+
+    &:hover {
+      color: #b3b3b3;
+    }
+  }
+
+  .active {
+    color: #fff;
   }
 }
