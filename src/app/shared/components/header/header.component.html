@@ -41,6 +41,11 @@
       <div class="header__actions">
         <app-icon name="search" width="17px" height="17px"></app-icon>
         <app-icon name="notification" width="17px" height="20px"></app-icon>
+        <app-flyout-menu
+          selectedProfileIcon="01"
+          [profiles]="profiles"
+          [actions]="actions"
+        ></app-flyout-menu>
       </div>
     </header>
   </ng-template>

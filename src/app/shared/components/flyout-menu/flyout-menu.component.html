@@ -1,0 +1,45 @@
+<div
+  class="flyout-menu"
+  (mouseenter)="isMenuOpen = true"
+  (mouseleave)="isMenuOpen = false"
+>
+  <button class="flyout-menu__dropdown-btn">
+    <div class="flyout-menu__profile-icon">
+      <app-icon
+        [name]="selectedProfileIcon"
+        height="32px"
+        width="32px"
+        [profileIcons]="true"
+      ></app-icon>
+    </div>
+    <app-icon
+      name="arrow-down"
+      width="10px"
+      height="5px"
+      class="flyout-menu__arrow-icon"
+      [ngClass]="{ rotate: isMenuOpen }"
+    ></app-icon>
+  </button>
+  <div class="flyout-menu__content" *ngIf="isMenuOpen">
+    <!-- <div class="flyout-menu__arrow-up"></div> -->
+    <div class="flyout-menu__items">
+      <a href="#" *ngFor="let profile of profiles.icon">
+        <app-icon
+          height="32px"
+          width="32px"
+          [name]="profile"
+          [profileIcons]="true"
+        ></app-icon>
+        {{ profiles.name[profiles.icon.indexOf(profile)] }}
+      </a>
+
+      <a href="#" *ngFor="let action of actions.icon">
+        <app-icon height="25px" width="25px" [name]="action"></app-icon>
+        {{ actions.label[actions.icon.indexOf(action)] }}
+      </a>
+    </div>
+    <div class="flyout-menu__sign-out">
+      <a href="#">Sign out of Netflix</a>
+    </div>
+  </div>
+</div>
