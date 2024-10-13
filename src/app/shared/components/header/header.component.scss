@@ -1,0 +1,84 @@
+@import "colors";
+
+:host {
+  font-family: "Netflix Sans", sans-serif;
+}
+
+::ng-deep {
+  .dropdown__select {
+    border-radius: 4px !important;
+    border: 1px solid $grey-350 !important;
+  }
+
+  .button__red {
+    width: 77px !important;
+    height: 32px !important;
+    font-size: 0.875rem;
+  }
+}
+
+.header {
+  width: 100vw;
+
+  &__landing {
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+    height: 7.5rem;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__home {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.4s;
+    width: 100%;
+    gap: 45px;
+    height: 4.25rem;
+    padding: 0 3%;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: calc(100% + 80rem);
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+  }
+
+  li {
+    width: auto;
+    cursor: pointer;
+  }
+
+  a {
+    color: $grey-10;
+    text-decoration: none;
+    transition: color 0.4s;
+
+    &:hover:not(.active) {
+      color: $grey-100;
+    }
+  }
+
+  .active {
+    color: $primary-white;
+  }
+}

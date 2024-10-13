@@ -1,0 +1,94 @@
+@import "colors";
+
+.flyout-menu {
+  position: relative;
+  display: inline-block;
+
+  &__dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 1px;
+  }
+
+  &__profile-icon {
+    ::ng-deep {
+      .icon {
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__arrow-icon {
+    transition: transform 0.3s ease;
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    text-decoration: none;
+    color: $primary-white;
+    font-size: 13px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    background-color: $grey-900;
+    border: 1px solid $grey-200;
+    z-index: 999;
+    width: 220px;
+    height: 390px;
+    padding: 0.75rem 1rem;
+    top: 102%;
+    right: -50%;
+
+    .flyout-menu__arrow-up {
+      position: absolute;
+      top: -10px;
+      left: 75%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #ffffffef;
+    }
+
+    app-icon {
+      border-radius: 2px;
+      margin-right: 10px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  &__sign-out {
+    font-size: 14px;
+    border-top: 1px solid $grey-200;
+    display: flex;
+    justify-content: center;
+    color: $primary-white;
+    padding-top: 0.75rem;
+    align-items: flex-end;
+  }
+
+  &:hover .flyout-menu__content {
+    display: block;
+  }
+}

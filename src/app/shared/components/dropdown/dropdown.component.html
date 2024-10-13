@@ -1,11 +1,15 @@
 <div class="dropdown">
   <label class="dropdown__label" *ngIf="label">{{ label }}</label>
+  <ng-container *ngIf="icon">
+    <app-icon width="14px" height="14px" [name]="icon"></app-icon>
+  </ng-container>
   <select
     [(ngModel)]="selectedOption"
     (focus)="onFocus()"
     (blur)="onBlur()"
     (change)="onOptionSelected($event)"
     class="dropdown__select"
+    [ngClass]="{ dropdown__select__icon: icon }"
   >
     <option
       class="dropdown__option"

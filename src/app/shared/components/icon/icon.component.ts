@@ -13,10 +13,15 @@ export class IconComponent implements OnInit {
   @Input() width: string = '24px';
   @Input() height: string = '24px';
   @Input() color!: string;
+  @Input() profileIcons: boolean = false;
 
   public iconPath: string = '';
 
   ngOnInit(): void {
-    this.iconPath = `assets/icons/${this.name}.svg`;
+    if (!this.profileIcons) {
+      this.iconPath = `assets/icons/${this.name}.svg`;
+    } else {
+      this.iconPath = `assets/profile-icons/${this.name}.svg`;
+    }
   }
 }

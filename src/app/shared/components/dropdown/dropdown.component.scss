@@ -4,6 +4,15 @@
   font-family: "Netflix Sans", sans-serif;
 }
 
+::ng-deep {
+  .icon {
+    position: absolute;
+    left: 26px;
+    z-index: 999;
+    top: 8px;
+  }
+}
+
 .dropdown {
   display: flex;
   align-items: center;
@@ -29,5 +38,10 @@
     background-position: calc(100% - 0.75rem) center;
     padding: 0 2rem 0 1rem;
     transition: background-color 0.3s ease;
+
+    &__icon {
+      position: relative;
+      padding: 0 2rem 0 2rem;
+    }
   }
 }
